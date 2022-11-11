@@ -37,10 +37,10 @@ In windows krijg een usb drive dus zoiets als
 E:\werkfolder\projectfolder
 ```
 
-sync vs mounten
-zet je de werkfolder in de lokale onedrive folder
-via de terminal : %OneDrive%\werkfolder\projectfolder
-dan staat je data dus op 2 plekken.
+### sync vs mounten
+zet je de werkfolder in de lokale onedrive folder dan kan je via de terminal de ENV gebruiken en staat je data dus op 2 plekken.
+
+` %OneDrive%\werkfolder\projectfolder ` 
 
 Met een NAS of hosting/cloud provider kun je externe opslag ook lokaal mounten, de data staat dan nog steeds elders op 1 plek, maar zodra je verbonden bent werkt het grotendeels als een gewone lokale folder. 
 
@@ -48,7 +48,7 @@ voor externe host/cloud is een SSH (sftp) verbinding de meest veilige methode.
 
 NOTE: bedenk wel dat herverbinden soms tricky kan zijn, vooral als de verbinding wegvalt via het editten.
 
-er zijn desktop (GUI) tools zoals nsoftware SSHdrive en cyberduck voor windows en mac, linux kan standaard via de filemanager mounten. 
+er zijn desktop (GUI) tools zoals [nsoftware SSHdrive](https://www.nsoftware.com/sftp/drive/) en [cyberduck voor windows en mac](https://cyberduck.io), linux kan standaard via de filemanager mounten. 
 
 Een professionelere setup valt buiten deze scope, maar wil je remote toegang tot je lokale werkfolder, dan kun het beste met tailscale een eigen netwerk opzetten. Dit is een moderne VPN oplossing, waar je in notime een veilige IP verbinding mee opzet. Voor SSH heb je wel een server nodig.
 
