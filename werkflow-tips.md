@@ -38,15 +38,15 @@ E:\werkfolder\projectfolder
 ```
 
 ### sync vs mounten
-zet je de werkfolder in de lokale onedrive folder dan kan je via de terminal de ENV gebruiken en staat je data dus op 2 plekken.
+zet je de werkfolder in de lokale onedrive folder dan kan je via de terminal de OneDrive ENV gebruiken, met sync staat je data dus op 2 plekken.
 
 ` %OneDrive%\werkfolder\projectfolder ` 
 
-Met een NAS of hosting/cloud provider kun je externe opslag ook lokaal mounten, de data staat dan nog steeds elders op 1 plek, maar zodra je verbonden bent werkt het grotendeels als een gewone lokale folder. 
+Met een NAS of hosting/cloud provider kun je externe opslag ook lokaal mounten, anders dan bij de sync manier, staat je data elders op 1 plek, zodra je verbonden bent werkt de mount folder grotendeels als een gewone lokale folder. 
 
-voor externe host/cloud is een SSH (sftp) verbinding de meest veilige methode. 
+voor extern hosting/cloud is een SSH (sftp) verbinding de meest gebruikte methode. Je kan ook een "poor mans VPN" opzetten via een ssh tunnel, je data wordt dat veilig versleuteld verzonden tussen je pc en de cloud, de verbinding is vaak wat stabieler. 
 
-NOTE: bedenk wel dat herverbinden soms tricky kan zijn, vooral als de verbinding wegvalt via het editten.
+NOTE: bedenk wel dat herverbinden soms tricky kan zijn, vooral als de verbinding wegvalt via het editten. dat kan bijvoorbeeld gebeuren door een slechte wifi verbinding of een instelling dat auto disconnect. 
 
 er zijn desktop (GUI) tools zoals [nsoftware SSHdrive](https://www.nsoftware.com/sftp/drive/) en [cyberduck voor windows en mac](https://cyberduck.io), linux kan standaard via de filemanager mounten. 
 
