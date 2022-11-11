@@ -15,10 +15,13 @@ Alles wat je in de home directory doet is userspace, dat wil zeggen dat toegang 
 maak jezelf bekend met "environment variables" voor jou systeem,
   dit is ook de standaard entry folder voor SSH.
 
-```  
+``` 
 
+```
 windows: %HOME% (test in terminal met echo %HOME%)
 mac/linux: $HOME (test in terminal met echo $HOME)
+
+```
 
 Zet je het in een root directory, dan is dit systemwide beschikbaar. dat kan handig zijn als je meerdere login accounts hebt op de computer.
 
