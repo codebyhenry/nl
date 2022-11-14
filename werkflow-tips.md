@@ -22,6 +22,7 @@ windows: %HOME% (test in terminal met echo %HOME%)
 mac/linux: $HOME (test in terminal met echo $HOME)
 
 ```
+zoals je ziet is de HOME in hoofdletters, in de terminal commands zijn vaak hoofdletter gevoelig, een Home of home zijn dus  andere folders dan HOME
 
 Zet je het in een root directory, dan is dit systemwide beschikbaar. dat kan handig zijn als je meerdere login accounts hebt op de computer.
 
