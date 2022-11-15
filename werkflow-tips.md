@@ -22,7 +22,7 @@ windows: %HOME% (test in terminal met echo %HOME%)
 mac/linux: $HOME (test in terminal met echo $HOME)
 
 ```
-zoals je ziet is de HOME in hoofdletters, in de terminal commands zijn vaak hoofdletter gevoelig, een Home of home zijn dus  andere folders dan HOME
+zoals je ziet is de HOME in hoofdletters, in de terminal commands zijn vaak hoofdletter gevoelig, een Home of home zijn dus  andere folders of commando's dan HOME
 
 Zet je het in een root directory, dan is dit systemwide beschikbaar. dat kan handig zijn als je meerdere login accounts hebt op de computer.
 
@@ -57,7 +57,13 @@ een NAS heeft deze standaard ingebouwd. Daarop kun je ook je eigen dev en test o
 
 Bouw je standalone (zoals android/java) applicaties of dingen die veel rekenwerk doen als machinelearing met dall-e of wil je druk bezochte ecommerce sites hosten, dan kun je met betere container technieken zoals kubernetes meer hardware inzetten en zo je eigen homelab opschalen en uitbouwen.
 
+## Github Repo, codespaces, gists
 
+Github is de microsoft cloud oplossing voor git, net als bij google docs of MS 365 staan je documenten in de cloud. Github heeft 2 mogelijkheden. je kan kleine stukjes code in een gist posten, als een soort note zoals je met google keep kleine snippets kan bewaren. voor projecten kun je mappen aanmaken onder repositories. 
+
+`git clone github.com/<USERNAME>/<REPO> ` spatie aanvullend een dot om het in de huidige map te klonen of foldername,  clone je lokaal de repo in je repo naam. 
+
+note: de dot heeft dus net als bij code . eenzelfde functie, je zegt tegen de terminal open een programma (in dit voorbeeld dus VScode) met de huidige werkfolder. dat is handig als je vanuit de terminal werkt, je kan ook de folder slepen naar VScode.
 
 
 
