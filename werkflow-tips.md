@@ -51,7 +51,7 @@ NOTE: bedenk wel dat herverbinden soms tricky kan zijn, vooral als de verbinding
 
 er zijn desktop (GUI) tools zoals [nsoftware SSHdrive](https://www.nsoftware.com/sftp/drive/) en [cyberduck voor windows en mac](https://cyberduck.io), linux kan standaard via de filemanager mounten. 
 
-Een professionelere setup valt buiten deze scope, maar wil je remote toegang tot je lokale werkfolder, dan kun het beste met tailscale een eigen netwerk opzetten. Dit is een moderne VPN oplossing, waar je in notime een veilige IP verbinding mee opzet. Voor SSH heb je wel een server nodig.
+Een professionelere setup valt buiten deze scope, maar wil je remote toegang tot je lokale werkfolder, dan kun het beste met [tailscale](https://tailscale.com),[wireguard](https://wireguard.com) of de selfhosted [teleport](https://goteleport.com) een eigen Zerotier netwerk opzetten. Dit is een moderne VPN oplossing, waar je in notime een veilige IP verbinding mee opzet. Voor SSH heb je wel een server nodig.
 
 een NAS heeft deze standaard ingebouwd. Daarop kun je ook je eigen dev en test omgevingen bouwen met behulp van docker. je heb je niet veel nodig, een oudere laptop of low power single board computer met een linux variant erop zoals proxmox of truenas is al goed genoeg. Meest belangrijke is voldoende (minimaal 4) ram en processor cores, gpu is onbelangrijk voor html,js en php zaken.
 
@@ -61,9 +61,17 @@ Bouw je standalone (zoals android/java) applicaties of dingen die veel rekenwerk
 
 Github is de microsoft cloud oplossing voor git, net als bij google docs of MS 365 staan je documenten in de cloud. Github heeft 2 mogelijkheden. je kan kleine stukjes code in een gist posten, als een soort note zoals je met google keep kleine snippets kan bewaren. voor projecten kun je mappen aanmaken onder repositories. 
 
-`git clone github.com/<USERNAME>/<REPO> ` spatie aanvullend een dot om het in de huidige map te klonen of foldername,  clone je lokaal de repo in je repo naam. 
+`git clone github.com/<USERNAME>/<REPO>` 
 
-note: de dot heeft dus net als bij code . eenzelfde functie, je zegt tegen de terminal open een programma (in dit voorbeeld dus VScode) met de huidige werkfolder. dat is handig als je vanuit de terminal werkt, je kan ook de folder slepen naar VScode.
+je kan een spatie en dot gebruiken om de clone in de huidige map te plaatsen of foldernaam of $HOME/folder
+
+bijvoorbeeld:
+
+```
+git clone https://github.com/codebyhenry/nl $HOME/test
+```
+
+
 
 
 
